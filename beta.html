@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beta Program — Savor</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍳</text></svg>">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">
+        <span class="nav__logo-icon">🍳</span>
+        <span class="nav__logo-text">Savor</span>
+      </a>
+      <button class="nav__mobile-toggle" onclick="document.querySelector('.nav__links').classList.toggle('open')" aria-label="Menu">☰</button>
+      <ul class="nav__links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="support.html">Support</a></li>
+        <li><a href="privacy.html">Privacy</a></li>
+        <li><a href="beta.html" class="active">Beta</a></li>
+        <li><a href="resources.html">Resources</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="container container--narrow">
+      <h1>Beta Program</h1>
+      <p>Help us make Savor better. Submit feedback and see what's new in each release.</p>
+    </div>
+  </section>
+
+  <!-- Release Notes -->
+  <section class="section">
+    <div class="container container--narrow">
+      <div class="section__header" style="text-align: left; margin-bottom: 36px;">
+        <h2>Release Notes</h2>
+        <p>What's changed in recent builds.</p>
+      </div>
+
+      <!-- Latest Build -->
+      <div class="release-card">
+        <span class="release-card__version">Latest</span>
+        <div class="release-card__date">February 10, 2026</div>
+        <h3>Bug Fixes</h3>
+        <ul>
+          <li class="fix">Fixed an issue where the onboarding completion screen's continue button was hidden behind the keyboard — the button is now always accessible and the keyboard automatically dismisses on that screen</li>
+          <li class="fix">Camera features now operate silently as intended — resolved an issue where the system shutter sound was playing during background photo capture</li>
+        </ul>
+      </div>
+
+      <!-- Initial Beta -->
+      <div class="release-card">
+        <span class="release-card__version" style="background: var(--color-muted);">v1.0.0</span>
+        <div class="release-card__date">February 7, 2026</div>
+        <h3>Initial Beta Release</h3>
+        <ul>
+          <li class="new">Full recipe browsing with categories and search</li>
+          <li class="new">Premium features with passcode protection</li>
+          <li class="new">Personal notes and journaling</li>
+          <li class="new">Wellness tools including affirmations and guided exercises</li>
+          <li class="new">Safety planning and documentation features</li>
+          <li class="new">Data export in multiple formats</li>
+          <li class="new">Alternate app icons</li>
+          <li class="new">Intruder detection with photo capture</li>
+          <li class="new">Children's information section</li>
+          <li class="new">Complete onboarding wizard</li>
+        </ul>
+      </div>
+
+      <!-- Legend -->
+      <div style="display: flex; gap: 24px; margin-top: 20px; font-size: 0.85rem; color: var(--color-muted);">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span style="width: 8px; height: 8px; border-radius: 50%; background: var(--color-amber); display: inline-block;"></span>
+          New feature
+        </div>
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span style="width: 8px; height: 8px; border-radius: 50%; background: var(--color-terracotta); display: inline-block;"></span>
+          Bug fix
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Feedback Form -->
+  <section class="section section--alt" id="feedback">
+    <div class="container container--narrow">
+      <div class="section__header" style="text-align: left; margin-bottom: 36px;">
+        <h2>Submit Feedback</h2>
+        <p>Your feedback directly shapes the app. Every report matters — thank you for testing.</p>
+      </div>
+
+      <form action="https://formspree.io/f/mbdajgrw" method="POST" class="card" style="padding: 36px;">
+
+        <div class="form-group">
+          <label for="beta-name">Name <span style="color: var(--color-muted); font-weight: 400;">(optional)</span></label>
+          <input type="text" id="beta-name" name="name" placeholder="How should we address you?">
+        </div>
+
+        <div class="form-group">
+          <label for="beta-email">Email <span style="color: var(--color-muted); font-weight: 400;">(optional, for follow-ups)</span></label>
+          <input type="email" id="beta-email" name="email" placeholder="your@email.com">
+        </div>
+
+        <div class="form-group">
+          <label for="beta-device">Device &amp; iOS Version</label>
+          <input type="text" id="beta-device" name="device" placeholder="e.g., iPhone 15, iOS 18.3">
+        </div>
+
+        <hr style="border: none; border-top: 1px solid var(--color-toast); margin: 28px 0;">
+
+        <div class="form-group">
+          <label>Overall, how would you rate the app?</label>
+          <div class="rating-group">
+            <div class="rating-option">
+              <input type="radio" id="r1" name="overall_rating" value="1">
+              <label for="r1">1</label>
+            </div>
+            <div class="rating-option">
+              <input type="radio" id="r2" name="overall_rating" value="2">
+              <label for="r2">2</label>
+            </div>
+            <div class="rating-option">
+              <input type="radio" id="r3" name="overall_rating" value="3">
+              <label for="r3">3</label>
+            </div>
+            <div class="rating-option">
+              <input type="radio" id="r4" name="overall_rating" value="4">
+              <label for="r4">4</label>
+            </div>
+            <div class="rating-option">
+              <input type="radio" id="r5" name="overall_rating" value="5">
+              <label for="r5">5</label>
+            </div>
+          </div>
+          <span class="hint">1 = Poor, 5 = Excellent</span>
+        </div>
+
+        <div class="form-group">
+          <label>How convincing is the disguise app?</label>
+          <div class="rating-group">
+            <div class="rating-option">
+              <input type="radio" id="d1" name="disguise_rating" value="1">
+              <label for="d1">1</label>
+            </div>
+            <div class="rating-option">
+              <input type="radio" id="d2" name="disguise_rating" value="2">
+              <label for="d2">2</label>
+            </div>
+            <div class="rating-option">
+              <input type="radio" id="d3" name="disguise_rating" value="3">
+              <label for="d3">3</label>
+            </div>
+            <div class="rating-option">
+              <input type="radio" id="d4" name="disguise_rating" value="4">
+              <label for="d4">4</label>
+            </div>
+            <div class="rating-option">
+              <input type="radio" id="d5" name="disguise_rating" value="5">
+              <label for="d5">5</label>
+            </div>
+          </div>
+          <span class="hint">1 = Obviously fake, 5 = Completely believable</span>
+        </div>
+
+        <hr style="border: none; border-top: 1px solid var(--color-toast); margin: 28px 0;">
+
+        <div class="form-group">
+          <label for="beta-type">Feedback Type</label>
+          <select id="beta-type" name="feedback_type">
+            <option value="">Select...</option>
+            <option value="bug">Bug Report</option>
+            <option value="feature">Feature Request</option>
+            <option value="disguise">Disguise Feedback</option>
+            <option value="usability">Usability Issue</option>
+            <option value="praise">Something I Love</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="beta-details">Details</label>
+          <textarea id="beta-details" name="details" placeholder="Please describe what happened, what you expected, and any steps to reproduce the issue. Be as detailed as possible — every bit helps." style="min-height: 160px;"></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="beta-suggestion">Any suggestions for improvement?</label>
+          <textarea id="beta-suggestion" name="suggestions" placeholder="Ideas, wishes, things you'd change..."></textarea>
+        </div>
+
+        <input type="hidden" name="_subject" value="Savor Beta Feedback">
+
+        <div style="margin-top: 8px;">
+          <button type="submit" class="btn btn--primary">Submit Feedback</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <div class="footer__brand-name">🍳 Savor</div>
+        <p>A personal recipe collection app built with privacy and care.</p>
+      </div>
+      <div class="footer__links">
+        <h4>App</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="support.html">Support</a></li>
+          <li><a href="beta.html">Beta Program</a></li>
+        </ul>
+      </div>
+      <div class="footer__links">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="resources.html">Resources</a></li>
+        </ul>
+      </div>
+      <div class="footer__bottom">
+        &copy; 2026 Savor. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

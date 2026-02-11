@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Support — Savor</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍳</text></svg>">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">
+        <span class="nav__logo-icon">🍳</span>
+        <span class="nav__logo-text">Savor</span>
+      </a>
+      <button class="nav__mobile-toggle" onclick="document.querySelector('.nav__links').classList.toggle('open')" aria-label="Menu">☰</button>
+      <ul class="nav__links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="support.html" class="active">Support</a></li>
+        <li><a href="privacy.html">Privacy</a></li>
+        <li><a href="beta.html">Beta</a></li>
+        <li><a href="resources.html">Resources</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="container container--narrow">
+      <h1>Support</h1>
+      <p>We're here to help you get the most out of Savor.</p>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section">
+    <div class="container container--narrow">
+      <div class="section__header" style="text-align: left; margin-bottom: 36px;">
+        <h2>Frequently Asked Questions</h2>
+      </div>
+
+      <div class="card" style="margin-bottom: 16px;">
+        <h3>How do I access premium features?</h3>
+        <p style="margin-top: 8px;">Long-press the Savor logo on the home screen for 5 seconds. You'll be prompted to enter your passcode to unlock premium features.</p>
+      </div>
+
+      <div class="card" style="margin-bottom: 16px;">
+        <h3>Where is my data stored?</h3>
+        <p style="margin-top: 8px;">All your data is stored locally on your device. Nothing is sent to external servers. If you uninstall the app, your data will be removed from your device.</p>
+      </div>
+
+      <div class="card" style="margin-bottom: 16px;">
+        <h3>How do I export my data?</h3>
+        <p style="margin-top: 8px;">In the premium section, go to Settings and tap "Export Data." You can export in a human-readable format or as a full backup file. Share it via AirDrop, email, or save to Files.</p>
+      </div>
+
+      <div class="card" style="margin-bottom: 16px;">
+        <h3>I forgot my passcode</h3>
+        <p style="margin-top: 8px;">For security, passcodes cannot be recovered or reset. If you've forgotten your passcode, you will need to reinstall the app. Please use the export feature regularly to back up important data.</p>
+      </div>
+
+      <div class="card" style="margin-bottom: 16px;">
+        <h3>Can I change the app icon?</h3>
+        <p style="margin-top: 8px;">Yes. In premium settings, you can switch between available app icons and display themes.</p>
+      </div>
+
+      <div class="card" style="margin-bottom: 16px;">
+        <h3>Does the app use my camera or microphone?</h3>
+        <p style="margin-top: 8px;">The app requests camera access only if you choose to use photo features. Permissions can be revoked at any time in your device's Settings. No media is ever uploaded or transmitted.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section section--alt">
+    <div class="container container--narrow">
+      <div class="section__header" style="text-align: left; margin-bottom: 36px;">
+        <h2>Contact Us</h2>
+        <p>Can't find what you need? Reach out and we'll get back to you.</p>
+      </div>
+
+      <form action="https://formspree.io/f/mbdajgrw" method="POST" class="card">
+        <div class="form-group">
+          <label for="contact-name">Name <span style="color: var(--color-muted); font-weight: 400;">(optional)</span></label>
+          <input type="text" id="contact-name" name="name" placeholder="Your name">
+        </div>
+
+        <div class="form-group">
+          <label for="contact-email">Email</label>
+          <input type="email" id="contact-email" name="email" placeholder="your@email.com" required>
+        </div>
+
+        <div class="form-group">
+          <label for="contact-subject">Subject</label>
+          <select id="contact-subject" name="subject">
+            <option value="">Select a topic...</option>
+            <option value="bug">Bug Report</option>
+            <option value="feature">Feature Request</option>
+            <option value="help">Help Using the App</option>
+            <option value="privacy">Privacy Question</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="contact-message">Message</label>
+          <textarea id="contact-message" name="message" placeholder="How can we help?" required></textarea>
+        </div>
+
+        <input type="hidden" name="_subject" value="Savor Support Request">
+
+        <button type="submit" class="btn btn--primary">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <div class="footer__brand-name">🍳 Savor</div>
+        <p>A personal recipe collection app built with privacy and care.</p>
+      </div>
+      <div class="footer__links">
+        <h4>App</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="support.html">Support</a></li>
+          <li><a href="beta.html">Beta Program</a></li>
+        </ul>
+      </div>
+      <div class="footer__links">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="resources.html">Resources</a></li>
+        </ul>
+      </div>
+      <div class="footer__bottom">
+        &copy; 2026 Savor. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Savor — Recipe Collection</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍳</text></svg>">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">
+        <span class="nav__logo-icon">🍳</span>
+        <span class="nav__logo-text">Savor</span>
+      </a>
+      <button class="nav__mobile-toggle" onclick="document.querySelector('.nav__links').classList.toggle('open')" aria-label="Menu">☰</button>
+      <ul class="nav__links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="support.html">Support</a></li>
+        <li><a href="privacy.html">Privacy</a></li>
+        <li><a href="beta.html">Beta</a></li>
+        <li><a href="resources.html">Resources</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <span class="hero__badge">Available on the App Store</span>
+      <h1>Your recipes, beautifully<br>organized</h1>
+      <p class="hero__subtitle">Savor is a personal recipe collection app designed with your privacy in mind. All your data stays on your device.</p>
+      <div style="display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;">
+        <a href="#features" class="btn btn--primary">Explore Features</a>
+        <a href="support.html" class="btn btn--outline">Get Support</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="section section--alt" id="features">
+    <div class="container">
+      <div class="section__header">
+        <h2>Everything you need</h2>
+        <p>A clean, private space for your recipe collection and personal notes.</p>
+      </div>
+      <div class="grid grid--3">
+        <div class="card">
+          <span class="card__icon">📖</span>
+          <h3>Browse Recipes</h3>
+          <p>Hundreds of recipes organized by category — breakfast, lunch, dinner, desserts, and more.</p>
+        </div>
+        <div class="card">
+          <span class="card__icon">⭐</span>
+          <h3>Save Favorites</h3>
+          <p>Quickly save the recipes you love for easy access anytime.</p>
+        </div>
+        <div class="card">
+          <span class="card__icon">🔍</span>
+          <h3>Smart Search</h3>
+          <p>Find exactly what you're looking for with instant search across all your recipes.</p>
+        </div>
+        <div class="card">
+          <span class="card__icon">📝</span>
+          <h3>Personal Notes</h3>
+          <p>Add your own notes, journal entries, and personal reflections in a private space.</p>
+        </div>
+        <div class="card">
+          <span class="card__icon">🔒</span>
+          <h3>Privacy First</h3>
+          <p>All data stored locally on your device. No accounts, no cloud, no tracking. Your information stays yours.</p>
+        </div>
+        <div class="card">
+          <span class="card__icon">💾</span>
+          <h3>Backup &amp; Export</h3>
+          <p>Export your data whenever you need it. Your content, your control.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Premium -->
+  <section class="section">
+    <div class="container">
+      <div class="section__header">
+        <h2>Premium features</h2>
+        <p>Unlock advanced tools with passcode-protected premium access.</p>
+      </div>
+      <div class="grid grid--2">
+        <div class="card">
+          <span class="card__icon">📅</span>
+          <h3>Meal Planning</h3>
+          <p>Plan your week with advanced organization tools, goal setting, and personal checklists.</p>
+        </div>
+        <div class="card">
+          <span class="card__icon">🧘</span>
+          <h3>Wellness Tools</h3>
+          <p>Daily affirmations, guided exercises, journaling with mood tracking, and personal prompts.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Privacy Callout -->
+  <section class="section section--alt">
+    <div class="container" style="text-align: center;">
+      <h2 style="margin-bottom: 16px;">Your privacy is our priority</h2>
+      <p style="margin: 0 auto 32px; max-width: 540px; color: var(--color-muted);">
+        Savor doesn't collect personal data, doesn't require an account, and never sends your information to external servers. Everything stays on your device.
+      </p>
+      <a href="privacy.html" class="btn btn--secondary">Read our Privacy Policy</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <div class="footer__brand-name">🍳 Savor</div>
+        <p>A personal recipe collection app built with privacy and care.</p>
+      </div>
+      <div class="footer__links">
+        <h4>App</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="support.html">Support</a></li>
+          <li><a href="beta.html">Beta Program</a></li>
+        </ul>
+      </div>
+      <div class="footer__links">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="resources.html">Resources</a></li>
+        </ul>
+      </div>
+      <div class="footer__bottom">
+        &copy; 2026 Savor. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
