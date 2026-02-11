@@ -1,2 +1,2 @@
 # github.io
-Savor - Beta Testing Info
+Savor App Info
